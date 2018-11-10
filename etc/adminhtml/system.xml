@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:module:Magento_Config:etc/system_file.xsd'
+>
+	<system>
+		<section id='sales'>
+			<group
+				id='mage2pro'
+				showInDefault='1' showInStore='1' showInWebsite='1'
+				sortOrder='-1'
+				translate='label'
+			>
+				<label>Order Notifier</label>
+				<field
+					id='enable'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='1'
+					translate='label'
+					type='select'
+				>
+					<label>Enable?</label>
+					<comment><![CDATA[Enable sending of new order's data to a specified URL in a JSON format</a>?]]></comment>
+					<config_path>mage2pro/order_notifier/enable</config_path>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field
+					id='url'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='2'
+					translate='label'
+					type='text'
+				>
+					<label>URL</label>
+					<comment><![CDATA[The URL the data will be sent to.]]></comment>
+					<config_path>mage2pro/order_notifier/url</config_path>
+					<depends><field id='enable'>1</field></depends>
+					<validate>required-entry</validate>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
