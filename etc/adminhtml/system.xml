@@ -20,7 +20,7 @@
 					type='select'
 				>
 					<label>Enable?</label>
-					<comment><![CDATA[Enable sending of new order's data to a specified URL in a JSON format</a>?]]></comment>
+					<comment><![CDATA[Enable sending?]]></comment>
 					<config_path>mage2pro/order_notifier/enable</config_path>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 				</field>
@@ -32,7 +32,7 @@
 					type='text'
 				>
 					<label>URL</label>
-					<comment><![CDATA[The URL the data will be sent to.]]></comment>
+					<comment><![CDATA[The endpoint URL]]></comment>
 					<config_path>mage2pro/order_notifier/url</config_path>
 					<depends><field id='enable'>1</field></depends>
 					<validate>required-entry</validate>

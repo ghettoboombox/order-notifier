@@ -23,7 +23,7 @@ bin/magento maintenance:disable
 
 ## Backend settings
 
-![](https://mage2.pro/uploads/default/original/2X/5/5dc6483369d3628688092c098dd2cb42d28d0dce.png)
+![](https://mage2.pro/uploads/default/original/2X/2/24d60a7898a939b2a41b8056e8a0a08c174c60fc.png)
 
 ## An order's history
 ![](https://mage2.pro/uploads/default/original/2X/8/86a2ab2c6dba214c229b18b3dda388edeeea8119.png)
