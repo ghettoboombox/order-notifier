@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/order-notifier"
-	,"version": "0.0.2"
+	,"version": "1.0.0"
 	,"description": "The module sends a new order's data to a specified URL in a JSON format."
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/mage2pro/order-notifier"
